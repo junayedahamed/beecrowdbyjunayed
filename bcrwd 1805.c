@@ -1,14 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int i,a,b;
-    int sum=0;
-    scanf("%d %d",&a,&b);
-    for(i=a; i<=b; i++){
-            sum+=i;
-
-    }
-    printf("%d\n",sum);
+   long int i,a,b,sum=0;
+   scanf("%ld %ld",&a,&b);
+   sum=((a+b)*(b-a+1)/2);
+   
+       printf("%ld\n",sum);
 
     return 0;
 }
