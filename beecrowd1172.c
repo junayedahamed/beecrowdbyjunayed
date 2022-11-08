@@ -1,21 +1,23 @@
 #include<stdio.h>
 int main(){
-    int arr[10];
-    int i;
-    for(i=1;i<=10;i++){
-        scanf("%d",&i);
-        if(i<=0){
-            i=1;
+   long int X[10],i,j;
+
+    for(i=0;i<10;i++){
+
+     scanf("%ld",&X[i]);
+    }
+    for(i=0;i<10;i++){
+
+        if(X[i]==0 || X[i]<0)
+
+        printf("X[%ld] = 1\n",i);
+
+    else{
+            printf("X[%ld] = %d\n",i,X[i]);
         }
     }
-    printf("%d\n",arr[1]);
-      printf("%d\n",arr[2]);
-        printf("%d\n",arr[3]);
-          printf("%d\n",arr[4]);
-            printf("%d\n",arr[5]);
-              printf("%d\n",arr[6]);
-                printf("%d\n",arr[7]);
-                  printf("%d\n",arr[8]);
-                    printf("%d\n",arr[9]);
-                      printf("%d\n",arr[10]);
+
+
+
+    return 0;
 }
